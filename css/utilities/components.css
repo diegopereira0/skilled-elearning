@@ -62,3 +62,9 @@
 .button-tertiary {
   background: var(--gradient-2) no-repeat;
 }
+
+@media (max-width: 768px) {
+  .button {
+    padding: 0.75rem 1.5rem;
+  }
+}

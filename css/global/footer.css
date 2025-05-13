@@ -1,0 +1,11 @@
+.footer-bg {
+  background: var(--neutral-color-300);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
