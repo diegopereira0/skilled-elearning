@@ -1,0 +1,35 @@
+:root {
+  --neutral-color-0: #fff;
+  --neutral-color-100: #83869a;
+  --neutral-color-200: #666ca3;
+  --neutral-color-300: #13183f;
+  --primary-color-100: #ffa7c3;
+  --primary-color-200: #f74780;
+  --gradient-1: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  --gradient-2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
+
+.neutral-color-0 {
+  color: var(--neutral-color-0);
+}
+
+.neutral-color-100 {
+  color: var(--neutral-color-100);
+}
+
+.neutral-color-200 {
+  color: var(--neutral-color-200);
+}
+
+.neutral-color-300 {
+  color: var(--neutral-color-300);
+}
+
+.primary-color-100 {
+  color: var(--primary-color-100);
+}
+
+.primary-color-200 {
+  color: var(--primary-color-200);
+}
+

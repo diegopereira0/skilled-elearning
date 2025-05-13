@@ -1,0 +1,64 @@
+.container {
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  color: var(--neutral-color-0);
+  padding: 1rem 2rem;
+  border-radius: 32px;
+  font: 700 1.125rem/1.75rem "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  transition: background 0.3s ease 0s;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.button-primary {
+  background: var(--gradient-1) no-repeat;
+}
+
+.button-primary::before,
+.button-tertiary::before {
+  content: "";
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  z-index: -1;
+}
+
+.button-primary:hover::before,
+.button-tertiary:hover::before {
+  opacity: 1;
+}
+
+.button-primary:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    var(--gradient-1);
+}
+
+.button-secondary {
+  background: var(--neutral-color-300);
+}
+
+.button-secondary:hover {
+  background: #666ca3;
+}
+
+.button-tertiary {
+  background: var(--gradient-2) no-repeat;
+}

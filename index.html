@@ -1,52 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Skilled e-learning landing page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo-dark">
+        <img src="./assets/logo-dark.svg" alt="Skilled logo" />
+      </div>
+      <a class="button button-secondary" href="./"> Get Started</a>
+    </header>
 
-  Get Started
+    <section class="hero container">
+      <div class="hero-info">
+        <h1 class="heading-xl neutral-color-300">
+          Maximize skill, minimize budget
+        </h1>
 
-  Maximize skill, minimize budget
+        <p class="body-m">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
 
-  Our modern courses across a range of in-demand skills will give you the 
-  knowledge you need to live the life you want.
+        <a class="button button-primary" href="./">Get Started</a>
+      </div>
 
-  Get Started
-
-  Check out our most popular courses!
-
-  Animation
-  Learn the latest animation techniques to create stunning motion 
-  design and captivate your audience.
-  Get Started
-
-  Design
-  Create beautiful, usable interfaces to help shape the future of 
-  how the web looks.
-  Get Started
-
-  Photography
-  Explore critical fundamentals like lighting, composition, and focus 
-  to capture exceptional photos.
-  Get Started
-
-  Crypto
-  All you need to know to get started investing in crypto. Go from beginner 
-  to advanced with this 54 hour course.
-  Get Started
-
-  Business
-  A step-by-step playbook to help you start, scale, and sustain your business 
-  without outside investment.
-  Get Started
-
-  Get Started
-
-</body>
+      <picture class="hero-img">
+        <source
+          media="(max-width: 630px)"
+          srcset="./assets/image-hero-mobile.webp"
+        />
+        <img
+          src="./assets/image-hero-desktop.webp"
+          alt="Woman drinking coffee and course-member hours"
+          width="1046"
+          height="938"
+        />
+      </picture>
+    </section>
+    Check out our most popular courses! Animation Learn the latest animation
+    techniques to create stunning motion design and captivate your audience. Get
+    Started Design Create beautiful, usable interfaces to help shape the future
+    of how the web looks. Get Started Photography Explore critical fundamentals
+    like lighting, composition, and focus to capture exceptional photos. Get
+    Started Crypto All you need to know to get started investing in crypto. Go
+    from beginner to advanced with this 54 hour course. Get Started Business A
+    step-by-step playbook to help you start, scale, and sustain your business
+    without outside investment. Get Started Get Started
+  </body>
 </html>
