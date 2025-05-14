@@ -1,0 +1,76 @@
+.courses-bg {
+  background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+}
+
+.courses {
+  padding-bottom: 8.75rem;
+}
+
+.courses-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem 1.875rem;
+}
+
+.highlight-item {
+  background: var(--gradient-1) no-repeat;
+  padding: 4rem 2rem 8.625rem;
+  border-radius: 1rem;
+}
+
+.courses-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--neutral-color-0);
+  padding: 4rem 2rem 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+  position: relative;
+}
+
+.courses-list-item::before {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: red;
+  position: absolute;
+  top: -28px;
+}
+
+.courses-list-item:nth-child(2)::before {
+  background: url("../../assets/icon-animation.svg");
+}
+
+.courses-list-item:nth-child(3)::before {
+  background: url("../../assets/icon-design.svg");
+}
+
+.courses-list-item:nth-child(4)::before {
+  background: url("../../assets/icon-photography.svg");
+}
+
+.courses-list-item:nth-child(5)::before {
+  background: url("../../assets/icon-crypto.svg");
+}
+
+.courses-list-item:nth-child(6)::before {
+  background: url("../../assets/icon-business.svg");
+}
+
+.courses-list-item h3, .courses-list-item p {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .courses-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 532px) {
+  .courses-list {
+    grid-template-columns: 1fr;
+  }
+}

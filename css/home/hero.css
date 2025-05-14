@@ -46,6 +46,10 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    margin-bottom: 11.25rem;
+  }
+
   .hero h1,
   .hero p {
     margin-bottom: 1.5rem;
@@ -60,6 +64,7 @@
   .hero {
     grid-template-columns:1fr;
     margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 
   .hero p {
